@@ -51,9 +51,9 @@
             <li><a href="./work01.html" title="" class="active">01</a></li>
             <li><a href="./work02.html" title="">02</a></li>
             <li><a href="./index.html" title="">03</a></li>
-            <li><a href="./index.html" title="">04</a></li>
+            <!-- <li><a href="./index.html" title="">04</a></li>
             <li><a href="./index.html" title="">05</a></li>
-            <li><a href="./index.html" title="">06</a></li>
+            <li><a href="./index.html" title="">06</a></li> -->
           </ul>
 
 
@@ -68,9 +68,16 @@
           <img src="./assets/images/work02-06.png" class="img-responsive" alt="">
           <div class="card-container">
             <div class="text-center">
-              <h1 class="h2">02 : Firefly Robots</h1>
+              <h1 class="h2">02 : Firefly Bots</h1>
             </div>
-            <p>The Firefly Robot project originated from Dr. Derrick Yeo's work at the University of Maryland. Rishad Hasan and I joined the project through ROB 203: Robot Mechanism at the University of Michigan, Fall 2024. We presented the project idea at 2024 UM Robotics Undergraduate Symposium and are still working on it. So far, we have built several firefly-bot prototypes and implemented the synchronization algorithm. We are now redesigned the PCB for scalability and preparing for a public exhibition of the firefly wall.</p>
+            <p>The Firefly Robot project originated from <b>Dr. Derrick Yeo's work at the University of Maryland</b>.
+              <b>Rishad
+                Hasan and I</b> joined the project through <b>ROB 203: Robot Mechanism at the University of
+                Michigan</b>, Fall 2024.
+              We presented the project idea at 2024 UM Robotics Undergraduate Symposium and are still working on it. So
+              far, we have built several firefly-bot prototypes and implemented the synchronization algorithm. We are
+              now redesigning the PCB for scalability and preparing for a public exhibition of the firefly wall.
+            </p>
 
             <blockquote>
               <p>Have you ever seen fireflies twinkling at night? How did you feel?</p>
@@ -189,86 +196,80 @@
           </div>
         </div>
       </div> -->
+
       <div class="col-xs-12">
+        <h2>Current Progress</h2>
+        <h3>Synchronizing RP2040 firefly bots</h3>
+        <p>We have developed new firefly bots on RP2040 microcontroller that are backwards-compatible with the
+          previous-generation of UMD FIREfly bots while keeping the IR-communications protocol easily expandable to
+          support interactive elements. The current bots transmit IR-signals and flash visible LEDs at regular
+          intervals, detect IR signals from neighboring units, and implement synchronization algorithms. </p>
+        <div class="col-md-7">
+          <img src="./assets/images/work02-07.png" class="img-responsive" alt="">
+        </div>
+        <div class="col-md-5">
+          <img src="./assets/images/work02-08.png" class="img-responsive" alt="">
+        </div>
+
+        <div>
+          <h2>
+
+          </h2>
+        </div>
+
+        <h3>Motion Detection in MATLAB </h3>
+        <div class="col-md-9">
+         
+          <p>We have implemented a camera-based interactive algorithm in Matlab that detects and maps motion in the
+            captured image plane to trigger signals for firefly bots in specific zones of the display. This serves as a
+            basis and proof of concept for the unit-based approach we will implement with the fireflies.</p>
+  
+        </div>
+        <div class="col-md-3">
+          <img src="./assets/images/work02-09.png" class="img-responsive" alt="">
+        </div>
+        
+      </div>
+
+      <div class="col-xs-12">
+        <h2>Acknolodgements</h2>
         <div class="col-md-10">
-          <h2>Acknolodgements</h2>
+
           <p>
-            The authors would like to acknowledge the University of Maryland FIRE program that supported an earlier
-            version of this work, and Michigan Robotics for supporting our work through ROB 203, Robotics Mechanisms.
+            We would like to acknowledge the University of Maryland FIRE program that supported an earlier
+            version of this work, Michigan Robotics for supporting our work through ROB 203, Robotics Mechanisms, and UM
+            ArtsEngine for funding our production of PCBs and holding exhibition.
           </p>
-          <div class="col-md-7">
+          <div class="col-md-6">
             <img src="./assets/images/UMD-logo.png" class="img-responsive" alt="">
           </div>
+
+          <div class="col-md-6">
+            <img src="./assets/images/artsengine-logo.png" class="img-responsive" alt="">
+          </div>
+
+
         </div>
         <div class="col-md-2">
           <img src="./assets/images/UM-logo.png" class="img-responsive" alt="">
         </div>
       </div>
-
-
       <div class="col-xs-12">
-        <div class="col-xs-8">
-          <h2>Interaction</h2>
-          <h3>Approach</h3>
-          <b>The fruit acts to approach to mimic the fear, curiosity, eye contact reaction of the elderly when
-            caregivers are around.</b>
-          <p>Four <b>ultrasonic distance sensors</b> are equipped on the frame, facing each direction to detect
-            whether there is audience approaching, and the speed of approaching. When approached, the fruit dodges to
-            the opposite direction to an extent based on the spped of audience. If there is someone nearby without
-            approaching, the fruit raises her head to the audience curiously.</p>
-          <h3>Touch</h3>
 
-          <p>Multiple <b>pressure sensors</b> and <b>flex sensors</b> are attached to the surface of the fruit,
-            monitoring the force applied on it. The fruit swings and trembles when being touched as if their scars are
-            touched. <b>What kind of scars? A strong desire to be cared not only physically, but emotionally. A strong
-              desire to lead a decent late time.</b> The trembling reflects their struggle in the caregiver
-            relationship: having no choice but to depend on; having no autonomy but desiring love.</p>
-        </div>
-        <div class="col-xs-4">
-          <img src="./assets/images/work01-06.png" class="img-responsive" alt="">
-          <p>Overview of the installation</p>
-        </div>
 
       </div>
 
-      <div class="col-xs-12">
-        <h2>Structure</h2>
-        <h3>The Core</h3>
-        <div class="col-xs-9">
-          <h4>Upper Half</h4>
-          <p>A hollow hemispherical structure with circular openings on its surface houses a distance sensor inside,
-            receiving signals through the circular openings. The topmost opening connects to a load-bearing structure
-            for suspending fruit.</p>
-          <h4>Lower Half</h4>
-          <p>A petal-like structure with cavities between the petals designed to house cell load sensors. The
-            five-petal design corresponds to the structure of the Kigelia flower.</p>
-        </div>
 
-
-        <div class="col-xs-3">
-          <img src="./assets/images/work01-08.png" class="img-responsive" alt="">
-          <p>The core before firing</p>
-        </div>
-
-
-        <h3>Outer Layers</h3>
-        <p><b>Several Patel-like Structures covering the fruit core.</b> An irregular petal-like structure is composed
-          of multiple irregular clay blocks connected by threads. A motor controls the threads’ tension, adjusting the
-          angles and relative positions of the clay blocks to create deformation.</p>
-        <div class="col-xs-3">
-          <img src="./assets/images/work01-02.png" class="img-responsive" alt="">
-          <p>Installing outer layers</p>
-        </div>
-        <div class="col-xs-3">
-          <img src="./assets/images/work01-03.png" class="img-responsive" alt="">
-          <p>Outer layers with sensors</p>
-        </div>
-        <div class="col-xs-6">
-          <img src="./assets/images/work01-11.png" class="img-responsive" alt="">
-          <p>Overview of 6 petal-like layers</p>
-        </div>
-
+      <div>
+        <h2></h2>
       </div>
+
+
+
+
+      
+
+      
 
 
     </div>
@@ -280,9 +281,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <p>© Xiuwen Zheng | Website created with <a href="http://www.mashup-template.com/"
-              title="Create website with free html template">Mashup Template</a>/<a href="https://www.unsplash.com/"
-              title="Beautiful Free Images">Unsplash</a></p>
+          <p>© Xiuwen Zheng</p>
         </div>
       </div>
     </div>
