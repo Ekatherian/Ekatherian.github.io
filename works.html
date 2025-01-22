@@ -50,6 +50,9 @@
   </nav>
 </header>
 
+
+
+
 <div class="section-container">
   <div class="container">
     <div class="row">
@@ -94,17 +97,17 @@
                       </div>
                     </div>
                     <!-- 03 Work -->
-                    <!-- <div class="col-sm-4">
-                      <a href="./work01.html" title="" class="black-image-project-hover">
+                    <div class="col-sm-4">
+                      <a href="./work03.html" title="" class="black-image-project-hover">
                         <img src="./assets/images/work03-hover.jpg" alt="" class="img-responsive">
                       </a>
                       <div class="card-container card-container-lg">
-                        <h4>03/06</h4>
+                        <h4>2024</h4>
                         <h3>Food Saver: UI Design & User Research</h3>
                         <p>Fusce sed hendrerit augue, a rhoncus velit. In non lorem mattis, tempor sem sit amet.</p>
-                        <a href="./work01.html" title="" class="btn btn-default">Discover</a>
+                        <a href="./work03.html" title="" class="btn btn-default">Discover</a>
                       </div>
-                    </div> -->
+                    </div>
                     
                 </div>
                 <!--/row-->
@@ -175,7 +178,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <p>© Xiuwen Zheng</p>
+        <p>© Xiuwen Zheng | Website Visitor Count: <span id="visitor-count">Loading...</span></p>
       </div>
     </div>
   </div>
@@ -185,6 +188,25 @@
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
+
+  // Fetch visitor count and set it to the div's content
+  async function updateVisitorCount () {
+    try {
+      const response = await fetch('https://zjyang.dev/visitor_count/ekatheria/');
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const count = await response.text();
+      document.getElementById('visitor-count').textContent = count;
+    } catch (error) {
+      console.error('Error fetching visitor count:', error);
+      document.getElementById('visitor-count').textContent = 'Error loading visitor count.';
+    }
+  }
+
+  // Call the function on page load
+  window.onload = updateVisitorCount;
+
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID 
