@@ -86,62 +86,73 @@
           </div>
         </div>
 
+
+
         <div class="col-xs-12">
-          <h2>Introduction</h2>
+          <div class="col-md-8">
+            <h2>Introduction</h2>
+            <p>The very nature of this project combines themes in biology, engineering, and art. Swarms of insects,
+              like
+              fireflies are naturally evolved multi-agent systems that coordinate their behaviors in ways that are
+              both
+              functionally significant and visually interesting. Inspired by the rhythmic flashing of fireflies, we
+              are
+              building a swarm of analog firefly robots to mimic their self-synchronization behavior by developing
+              customized digital communication protocols. We plan to study their potential to invoke positive emotions
+              in
+              a viewer and improve humans’ emotional states through our interactive installation.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="./assets/images/work02-10.png" class="img-responsive" alt="">
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="col-xs-12">
           <div class="col-xs-12">
-            <div class="col-md-7">
-              <p>The very nature of this project combines themes in biology, engineering, and art. Swarms of insects, like
-                fireflies are naturally evolved multi-agent systems that coordinate their behaviors in ways that are both
-                functionally significant and visually interesting. Inspired by the rhythmic flashing of fireflies, we are
-                building a swarm of analog firefly robots to mimic their self-synchronization behavior by developing
-                customized digital communication protocols. We plan to study their potential to invoke positive emotions in
-                a viewer and improve humans’ emotional states through our interactive installation.
-              </p>
-            </div>
-            <div class="col-md-5">
-              <img src="./assets/images/work02-10.png" class="img-responsive" alt="">
+            <h2>Background: Bio-Inspired Synchronization</h2>
+            <p>Naturally evolved multi-agent systems - like flocks of birds, schools of fish, and swarms of insects –
+              coordinate their behaviors that are both functionally significant and visually interesting. Inspired by
+              the
+              rhythmic flashing of fireflies, we are building a swarm of analog firefly robots to mimic their
+              self-synchronization behavior and study their potential to invoke positive emotions in a viewer and
+              improve
+              humans' emotional states through interactive art displays and installations. </p>
+            <p>Prior research in the field indicates that breathing lights have a calming effect on emotional states; We
+              aim to extend this paradigm beyond observation and invite interaction. This poster presents initial
+              progress
+              towards building an interactive wall of self-synchronizing fireflies that also respond to the passage of
+              people walking nearby. In addition to visual cues, we also plan to experiment with generating sounds that
+              represent the state of the synchronization event, initially discordant tones that eventually harmonize
+              along
+              with the fireflies as they self-synchronize. creating a soothing experience for people who interact with
+              the
+              demonstration.</p>
+          </div>
+
+        </div>
+
+        <div class="col-xs-12">
+          <div class="col-xs-12">
+            <h2>Digitized Synchronization</h2>
+            <h3>Firefly Behavior</h3>
+            <p> Our work depends on the digital implementation of synchronization behaviors observed in nature. The
+              table
+              below depicts two bio-inspired self synchronization algorithms and the accompanying electronic processes
+              our
+              robots use to implement them.</p>
+            <div class="col-xs-12">
+              <img src="./assets/images/work02-01.png" class="img-responsive" alt="">
             </div>
           </div>
-          
-          
 
-         
         </div>
-
-        <div class="col-xs-12">
-          <h2>Background: Bio-Inspired Synchronization</h2>
-          <p>Naturally evolved multi-agent systems - like flocks of birds, schools of fish, and swarms of insects –
-            coordinate their behaviors that are both functionally significant and visually interesting. Inspired by the
-            rhythmic flashing of fireflies, we are building a swarm of analog firefly robots to mimic their
-            self-synchronization behavior and study their potential to invoke positive emotions in a viewer and improve
-            humans’ emotional states through interactive art displays and installations. </p>
-          <p>Prior research in the field indicates that breathing lights have a calming effect on emotional states; We
-            aim to extend this paradigm beyond observation and invite interaction. This poster presents initial progress
-            towards building an interactive wall of self-synchronizing fireflies that also respond to the passage of
-            people walking nearby. In addition to visual cues, we also plan to experiment with generating sounds that
-            represent the state of the synchronization event, initially discordant tones that eventually harmonize along
-            with the fireflies as they self-synchronize. creating a soothing experience for people who interact with the
-            demonstration.</p>
-        </div>
-
-        <div class="col-xs-12">
-          <h2>Digitized Synchronization</h2>
-          <h3>Firefly Behavior</h3>
-          <p> Our work depends on the digital implementation of synchronization behaviors observed in nature. The table
-            below depicts two bio-inspired self synchronization algorithms and the accompanying electronic processes our
-            robots use to implement them.</p>
-        </div>
-
       </div>
-      <div class="col-xs-12">
-        <img src="./assets/images/work02-01.png" class="img-responsive" alt="">
-        <p>Overview of the installation</p>
-      </div>
-      <!-- <div class="template-title-example">
-        <h3>In the context of firefly synchronization, we combine the following two algorithm on our robots by
-          incrementing the internal counter each cycle when an external stimulus is detected, causing each agent to
-          advance its period for that cycle.</h3>
-      </div> -->
 
       <div class="col-xs-12">
         <h3>Phase-delay Model </h3>
@@ -150,8 +161,9 @@
           whenever an external stimulus is detected. </p>
         <div class="col-xs-12">
           <img src="./assets/images/work02-02.png" class="img-responsive" alt="">
-          <p>Overview of the installation</p>
         </div>
+      </div>
+      <div class="col-xs-12">
         <h3>Integrate-and-fire Model</h3>
         <p>Louis Lapicque was a French biologist who introduced the Integrate-and-fire model in 1907, which was later
           applied to describe neuronal activity in the 1970s. An integrate-and-fire oscillator adds to an internal
@@ -161,7 +173,6 @@
           that ultimately results in brain activity on the macroscopic scale.</p>
         <div class="col-xs-12">
           <img src="./assets/images/work02-03.png" class="img-responsive" alt="">
-          <p>Overview of the installation</p>
         </div>
       </div>
 
@@ -183,41 +194,21 @@
           instructions. </p>
         <div class="col-xs-12">
           <img src="./assets/images/work02-04.png" class="img-responsive" alt="">
-          <p>Overview of the installation</p>
-        </div>
-
-        <div class="col-xs-12 col-md-8">
-          <h3>Proposed Audience Interaction Scheme</h3>
-          <p>We envision an installation where a swarm of fireflies are mounted on a vertical surface that loosely
-            represents ‘pixels’ on the display. A camera-based system will detect people approaching the display and
-            allow them to interact with the swarm by affecting the firefly robots through a combination of gesture and
-            proximity cues. The relevant Fireflies might be activated, reset or phase-advanced by these cues and
-            allowing the user to initiate or affect a synchronization event. </p>
-        </div>
-        <div class="col-xs-12 col-md-4">
-          <img src="./assets/images/work02-05.png" class="img-responsive" alt="">
-          <p>Overview of the installation</p>
         </div>
 
       </div>
-
-
-
-
-
-
-      <!-- <div class="col-md-8 col-md-offset-2 section-container-spacer">
-        <div class="row">
-          <div class="col-xs-12 col-md-8">
-            <img src="./assets/images/work01-01.png" class="img-responsive" alt="">
-            <p>Hanging the fruit core</p>
-          </div>
-          <div class="col-xs-12 col-md-4">
-            <img src="./assets/images/work01-05.png" class="img-responsive" alt="">
-            <p>The fruit</p>
-          </div>
-        </div>
-      </div> -->
+      <div class="col-xs-12 col-md-8">
+        <h3>Proposed Audience Interaction Scheme</h3>
+        <p>We envision an installation where a swarm of fireflies are mounted on a vertical surface that loosely
+          represents 'pixels' on the display. A camera-based system will detect people approaching the display and
+          allow them to interact with the swarm by affecting the firefly robots through a combination of gesture and
+          proximity cues. The relevant Fireflies might be activated, reset or phase-advanced by these cues and
+          allowing the user to initiate or affect a synchronization event. </p>
+      </div>
+      <div class="col-xs-12 col-md-4">
+        <img src="./assets/images/work02-05.png" class="img-responsive" alt="">
+        <p>Motion detection and installation feedback</p>
+      </div>
 
       <div class="col-xs-12">
         <h2>Current Progress</h2>
@@ -239,18 +230,17 @@
           </h2>
         </div>
 
+        
+
+      </div>
+      <div class="col-md-9">
         <h3>Motion Detection in MATLAB </h3>
-        <div class="col-md-9">
-
-          <p>We have implemented a camera-based interactive algorithm in Matlab that detects and maps motion in the
-            captured image plane to trigger signals for firefly bots in specific zones of the display. This serves as a
-            basis and proof of concept for the unit-based approach we will implement with the fireflies.</p>
-
-        </div>
-        <div class="col-md-3">
-          <img src="./assets/images/work02-09.png" class="img-responsive" alt="">
-        </div>
-
+        <p>We have implemented a camera-based interactive algorithm in Matlab that detects and maps motion in the
+          captured image plane to trigger signals for firefly bots in specific zones of the display. This serves as a
+          basis and proof of concept for the unit-based approach we will implement with the fireflies.</p>
+      </div>
+      <div class="col-md-3">
+        <img src="./assets/images/work02-09.png" class="img-responsive" alt="">
       </div>
 
       <div class="col-xs-12">
@@ -271,7 +261,6 @@
       <div class="col-xs-12">
         <h2>Acknolodgements</h2>
         <div class="col-md-10">
-
           <p>
             We would like to acknowledge the University of Maryland FIRE program that supported an earlier
             version of this work, Michigan Robotics for supporting our work through ROB 203, Robotics Mechanisms, and UM
